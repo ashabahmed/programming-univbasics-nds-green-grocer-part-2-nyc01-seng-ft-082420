@@ -6,7 +6,9 @@ def apply_coupons(cart, coupons)
     discount_item = find_item_by_name_in_collection(coupon[:item], cart) 
     
     if discount_item
-      discount_item[:count]
+      if discount_item[:count] > coupon[:num]
+        
+      end
     end
     
     
