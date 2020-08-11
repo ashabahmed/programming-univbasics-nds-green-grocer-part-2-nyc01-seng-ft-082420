@@ -47,10 +47,8 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-  cart = [{:item=>"BEETS", :price=>2.5, :clearance=>false, :count=>6},
-  {:item=>"DICK", :price=>4.5, :clearance=>false, :count=>3}
-  ]
-  total = 15 + 13.5
+ ]
+  total = 0 
   cart.each {|item| total += item[:price]*item[:count]}
-  total
+  total 
 end
