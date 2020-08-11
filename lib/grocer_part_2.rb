@@ -1,6 +1,11 @@
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
+  
+  cart.each do |item|
+    
+  end
+  
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
