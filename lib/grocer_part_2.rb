@@ -35,6 +35,8 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
+  
+  binding.pry 
   # Consult README for inputs and outputs
   #
   # This method should call
