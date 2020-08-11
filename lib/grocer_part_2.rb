@@ -45,7 +45,7 @@ def checkout(cart, coupons)
   clearanced_cart.each do |item| total += item[:price]*item[:count]
   
   end
-  total.round(2) = total.round(2) * 0.9 if total.round(2) > 100
+  total.round(2) = (total.round(2) * 0.9) if total.round(2) > 100
  
 
 
