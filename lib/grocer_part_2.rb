@@ -8,9 +8,6 @@ def apply_coupons(cart, coupons)
     if discount_item
       if discount_item[:count] >= coupon[:num]
         
-        {:item => "AVOCADO", :num => 2, :cost => 5.00}
-        {:item => "Burgers", :num => 2, :cost => 15.00}
-        
         
         cart << {:item => "#{coupon[:item]} W/COUPON",
           :price => coupon[:cost]/coupon[:num],
