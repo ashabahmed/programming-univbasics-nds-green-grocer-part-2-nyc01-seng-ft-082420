@@ -7,6 +7,7 @@ def apply_coupons(cart, coupons)
     
     if discount_item
       if discount_item[:count] > coupon[:num]
+        differences = discount_item[:count]/coupon[:num] * coupon[:num]
         
       end
     end
