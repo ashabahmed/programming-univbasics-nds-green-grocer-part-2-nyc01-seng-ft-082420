@@ -33,7 +33,7 @@ def apply_clearance(cart)
   end
   cart_discounted
 end
-
+cart = []
 def checkout(cart, coupons)
   
   consolidate_cart(cart)
