@@ -51,7 +51,6 @@ def checkout(cart, coupons)
   {:item=>"DICK", :price=>4.5, :clearance=>false, :count=>3}
   ]
   total = 0
-  cart.each {|item| total = item[:price]*}
-  binding.pry
+  cart.each {|item| total += item[:price]*item[:count]}
   total = 
 end
