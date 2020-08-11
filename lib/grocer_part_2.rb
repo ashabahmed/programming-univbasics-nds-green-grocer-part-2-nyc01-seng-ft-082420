@@ -23,7 +23,14 @@ def apply_coupons(cart, coupons)
 end
 
 def apply_clearance(cart)
-
+  cart_discounted = []
+  
+  cart.each do |hash|
+  if hash[:clearance] == true 
+     hash[:price] * .8
+     cart_discounted << hash 
+    
+  end
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
