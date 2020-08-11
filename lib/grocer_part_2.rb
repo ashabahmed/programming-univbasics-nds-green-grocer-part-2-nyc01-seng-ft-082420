@@ -5,7 +5,6 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon|
     discount_item = find_item_by_name_in_collection(coupon[:item], cart) 
     
-    if discount_item
       if discount_item[:count] >= coupon[:num] #coupon will apply
         binding.pry
         discount_item[:count] = discount_item[:count] - coupon[:num]
