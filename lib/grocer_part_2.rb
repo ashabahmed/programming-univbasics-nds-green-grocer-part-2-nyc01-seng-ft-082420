@@ -31,9 +31,7 @@ def apply_clearance(cart)
      cart_discounted << hash 
     
   end
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+  cart_discounted
 end
 
 def checkout(cart, coupons)
