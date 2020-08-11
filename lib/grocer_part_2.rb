@@ -3,7 +3,13 @@ require_relative './part_1_solution.rb'
 def apply_coupons(cart, coupons)
   
   cart.each do |hash|
-    find_item_by_name_in_collection(hash[:item], coupons) 
+    discount_item = find_item_by_name_in_collection(hash[:item], coupons) 
+    
+    if discount_item
+      
+    end
+    
+    
   end
   
   # Consult README for inputs and outputs
