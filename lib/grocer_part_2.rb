@@ -28,7 +28,6 @@ def apply_clearance(cart)
   cart.each do |hash|
   if hash[:clearance] == true 
      hash[:price] = hash[:price] * 0.8
-     cart_discounted << hash 
    end
     cart_discounted << hash
   end
