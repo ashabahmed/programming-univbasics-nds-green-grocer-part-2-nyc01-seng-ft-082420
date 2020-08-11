@@ -12,7 +12,7 @@ def apply_coupons(cart, coupons)
         {:item => "Burgers", :num => 2, :cost => 15.00}
         
         
-        new_hash = {:item => "#{coupon[:item]} W/COUPON",
+        cart << {:item => "#{coupon[:item]} W/COUPON",
           :price => coupon[:cost]/coupon[:num],
           :clearance => true,
           :count => coupon[:num]
