@@ -47,7 +47,7 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-  [{:item=>"BEETS", :price=>2.5, :clearance=>false, :count=>6},
+  cart = [{:item=>"BEETS", :price=>2.5, :clearance=>false, :count=>6},
   {:item=>"DICK", :price=>4.5, :clearance=>false, :count=>3}
   ]
   cart.
