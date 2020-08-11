@@ -3,8 +3,8 @@ require_relative './part_1_solution.rb'
 def apply_coupons(cart, coupons)
   
   coupons.each do |coupon|
-    discount_item = find_item_by_name_in_collection(coupon[:item], cart) 
-    
+    discount_item[] = find_item_by_name_in_collection(coupon[:item], cart) 
+    how_many_can_be_discounted = discount_item[]
       if discount_item[:count] >= coupon[:num] #coupon will apply
         
         discount_item[:count] = discount_item[:count] - coupon[:num]
