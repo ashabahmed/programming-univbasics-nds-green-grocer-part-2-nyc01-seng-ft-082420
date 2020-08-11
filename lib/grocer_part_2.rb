@@ -37,6 +37,7 @@ end
 def checkout(cart, coupons)
   
   consolidate_cart(cart)
+  
   total = 0 
   cart.each {|item| total += item[:price]*item[:count]}
   total
