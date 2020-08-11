@@ -50,7 +50,8 @@ def checkout(cart, coupons)
   cart = [{:item=>"BEETS", :price=>2.5, :clearance=>false, :count=>6},
   {:item=>"DICK", :price=>4.5, :clearance=>false, :count=>3}
   ]
-  cart.each {|item|}
+  total = 0
+  cart.each {|item| total = item[:price]*}
   binding.pry
   total = 
 end
