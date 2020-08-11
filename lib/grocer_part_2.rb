@@ -2,8 +2,8 @@ require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
   
-  cart.each do |item|
-    
+  cart.each do |hash|
+    hash[:item]
   end
   
   # Consult README for inputs and outputs
