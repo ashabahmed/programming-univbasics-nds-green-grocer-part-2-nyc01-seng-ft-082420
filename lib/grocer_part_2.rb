@@ -4,12 +4,11 @@ def apply_coupons(cart, coupons)
   
   coupons.each do |coupon|
     discount_item[] = find_item_by_name_in_collection(coupon[:item], cart) 
-    
-    how_many_can_be_discounted = (discount_item[:count]/coupon[:num]) * coupon[:num]
-    
-      if discount_item[:count] >= coupon[:num] #coupon will apply
+    if discount_item[:clearance ]
+      
+      how_many_can_be_discounted = (discount_item[:count]/coupon[:num]) * coupon[:num]
         
-        discount_item[:count] = discount_item[:count] - how_many_can_be_discounted
+      discount_item[:count] = discount_item[:count] - how_many_can_be_discounted
         
         cart << {:item => "#{coupon[:item]} W/COUPON",
           :price => coupon[:cost]/coupon[:num],
