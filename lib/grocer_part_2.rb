@@ -36,7 +36,8 @@ end
 
 def checkout(cart, coupons)
   
-  binding.pry 
+  cart = consolidate_cart
+  coupons = apply_coupons
   # Consult README for inputs and outputs
   #
   # This method should call
