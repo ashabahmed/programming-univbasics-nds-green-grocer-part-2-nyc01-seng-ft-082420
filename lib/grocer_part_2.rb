@@ -44,7 +44,7 @@ def checkout(cart, coupons)
   cart.each do |item| total += item[:price]*item[:count]
   
   end
-  total
+  total.to_f
  
 
 
