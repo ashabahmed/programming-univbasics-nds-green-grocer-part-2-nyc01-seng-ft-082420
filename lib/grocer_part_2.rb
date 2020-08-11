@@ -31,7 +31,7 @@ def apply_clearance(cart)
    end
     cart_discounted << hash
   end
-  cart_discounted
+  cart
 end
 
 def checkout(cart, coupons)
