@@ -9,9 +9,9 @@ def apply_coupons(cart, coupons)
       if discount_item[:count] >= coupon[:num]
         
         new_hash = {:item => "#{coupon[:item]} W/COUPON",
-          :price => 2.50,
+          :price => coupon[:cost]/coupon[:num],
           :clearance => true,
-          :count => 2
+          :count => coupon[:num]
         }
 
         
