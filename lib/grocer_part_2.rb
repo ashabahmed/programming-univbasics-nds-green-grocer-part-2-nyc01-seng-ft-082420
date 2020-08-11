@@ -50,6 +50,7 @@ def checkout(cart, coupons)
   [{:item=>"BEETS", :price=>2.5, :clearance=>false, :count=>6},
   {:item=>"DICK", :price=>4.5, :clearance=>false, :count=>3}
   ]
+  cart.eac
   binding.pry
   total = 
 end
